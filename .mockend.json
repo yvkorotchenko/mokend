@@ -41,25 +41,6 @@
      "postcode": { "int": { "min": 0, "max": 1000000 } },
      "email": { "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}" },
      "phoneNumber": { "int": { "min": 0, "max": 1000000 } },
-   //   "jobActivities": {
-   //     "userActivity": [
-   //       {
-   //         "number": "62.01",
-   //         "name": "Комп'ютерне програмування",
-   //         "custom": false
-   //       },
-   //       {
-   //         "number": "62.02",
-   //         "name": "Консультування з питань iнформатизацiї",
-   //         "custom": false
-   //       },
-   //       {
-   //         "number": "62.03",
-   //         "name": "Дiяльнiсть iз керування комп'ютерним устаткованням",
-   //         "custom": false
-   //       }
-   //     ]
-   //   },
      "services": { "string": {} },
      "bankAccount": { "string": {} },
      "pricingType": { "string": {} },
