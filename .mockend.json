@@ -1,14 +1,32 @@
 {
-  "P": {
-    "title": { "string": {} },
-    "comments": {
-      "hasMany": "Comment"
+  "Contracts": {
+    "payment": { "string": {} },
+    "id": { "string": {} },
+    "terms": { "string": {} },
+    "number": { "string": {} },
+    "registryCode": { "string": {} },
+    "date: {
+    "dateTime": {
+      "min": "2010-01-01T00:00:00Z",
+      "max": "2020-12-31T23:59:59Z"
     }
   },
-  "Comment": {
-    "body": { "string": {} },
-    "post": {
-      "belongsTo": "Post"
+{ "isEstimation": { "boolean": {} } },
+"status": { "string": {} },
+{ "isSigned": { "boolean": {} } },
+ "createdAt: {
+    "dateTime": {
+      "min": "2010-01-01T00:00:00Z",
+      "max": "2020-12-31T23:59:59Z"
     }
-  }
+  },
+ "updatedAt: {
+    "dateTime": {
+      "min": "2010-01-01T00:00:00Z",
+      "max": "2020-12-31T23:59:59Z"
+    }
+  },
+
+  
+  },
 }
