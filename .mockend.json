@@ -26,5 +26,44 @@
         "max": "2020-12-31T23:59:59Z"
       }
     }
+  },
+  "Contractors": {
+    "givenName": { "string": {} },
+    "familyName": { "string": {} },
+    "legalName": { "string": {} },
+    "taxId": { "int": { "min": 0, "max": 1000000 } },
+    "personalIdentificationRegistryNumber": { "int": { "min": 0, "max": 1000000 } },
+    "country": { "string": {} },
+    "region": { "string": {} },
+    "city": { "string": {} },
+    "streetName": { "string": {} },
+    "streetNumber": { "int": { "min": 0, "max": 1000000 } },
+    "postcode": { "int": { "min": 0, "max": 1000000 } },
+    "email": { "string": {} },
+    "phoneNumber": { "int": { "min": 0, "max": 1000000 } },
+    "jobActivities": {
+      "string": [
+        {
+          "number": "62.01",
+          "name": "Комп'ютерне програмування",
+          "custom": false
+        },
+        {
+          "number": "62.02",
+          "name": "Консультування з питань iнформатизацiї",
+          "custom": false
+        },
+        {
+          "number": "62.03",
+          "name": "Дiяльнiсть iз керування комп'ютерним устаткованням",
+          "custom": false
+        }
+      ]
+    },
+    "services": { "string": {} },
+    "bankAccount": { "string": {} },
+    "pricingType": { "string": {} },
+    "compensationPayment": { "int": { "min": 0, "max": 1000000 } },
+    "fixedPayment": { "int": { "min": 0, "max": 1000000 } }
   }
 }
