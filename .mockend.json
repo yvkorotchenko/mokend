@@ -1,5 +1,5 @@
 {
-  "Contract": {
+  "Contracts": {
     "payment": { "string": {} },
     "id": { "string": {} },
     "terms": { "string": {} },
