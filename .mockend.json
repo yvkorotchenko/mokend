@@ -42,7 +42,7 @@
     "email": { "string": {} },
     "phoneNumber": { "int": { "min": 0, "max": 1000000 } },
     "jobActivities": {
-      "string": [
+      "{}": [
         {
           "number": "62.01",
           "name": "Комп'ютерне програмування",
