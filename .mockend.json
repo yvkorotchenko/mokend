@@ -27,7 +27,7 @@
       }
     }
   },
-  "Contractors": {
+  "Contractor": {
     "givenName": { "string": {} },
     "familyName": { "string": {} },
     "legalName": { "string": {} },
