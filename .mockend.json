@@ -1,51 +1,31 @@
 {
-   "Contract": {
-     "payment": { "string": {} },
-     "id": { "string": {} },
-     "terms": { "string": {} },
-     "number": { "string": {} },
-     "registryCode": { "string": {} },
-     "date": {
-       "dateTime": {
-         "min": "2010-01-01T00:00:00Z",
-         "max": "2020-12-31T23:59:59Z"
-       }
-     },
-     "isEstimation": { "boolean": {} },
-     "status": { "string": {} },
-     "isSigned": { "boolean": {} },
-     "createdAt": {
-       "dateTime": {
-         "min": "2010-01-01T00:00:00Z",
-         "max": "2020-12-31T23:59:59Z"
-       }
-     },
-     "updatedAt": {
-       "dateTime": {
-         "min": "2010-01-01T00:00:00Z",
-         "max": "2020-12-31T23:59:59Z"
-       }
-     }
-   },
-   "Contractor": {
-     "givenName": { "string": {} },
-     "familyName": { "string": {} },
-     "legalName": { "string": {} },
-     "taxId": { "int": { "min": 0, "max": 1000000 } },
-     "personalIdentificationRegistryNumber": { "int": { "min": 0, "max": 1000000 } },
-     "country": { "string": {} },
-     "region": { "string": {} },
-     "city": { "string": {} },
-     "streetName": { "string": {} },
-     "streetNumber": { "int": { "min": 0, "max": 1000000 } },
-     "postcode": { "int": { "min": 0, "max": 1000000 } },
-     "email": { "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}" },
-     "phoneNumber": { "int": { "min": 0, "max": 1000000 } },
-     "services": { "string": {} },
-     "bankAccount": { "string": {} },
-     "pricingType": { "string": {} },
-     "compensationPayment": { "int": { "min": 0, "max": 1000000 } },
-     "fixedPayment": { "int": { "min": 0, "max": 1000000 } }
-   }
- }
- 
+  "User": {
+    "name": {
+      "string": {}
+    },
+    "avatarUrl": {
+      "regexp": "https://i\\.pravatar\\.cc/150\\?u=[0-9]{5}"
+    },
+    "statusMessage": {
+      "string": [
+        "working from home",
+        "watching Netflix"
+      ]
+    },
+    "email": {
+      "regexp": "#[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
+    },
+    "color": {
+      "regexp": "#[0-9A-F]{6}"
+    },
+    "age": {
+      "int": {
+        "min": 21,
+        "max": 100
+      }
+    },
+    "isPublic": {
+      "boolean": {}
+    }
+  }
+}
